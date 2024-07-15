@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // multiples of 3 and 5.
+
+    let n=100;
+    for(let i=1;i<=100;i++){
+    if(i%3==0 && i%5!=0){
+        console.log("Fizz")
+    }
+    else if(i%5==0 && i%3!=0){
+        console.log("Buzz")
+    }
+    else if(i%3==0 && i%5==0)
+    {
+        console.log("FizzBuzz")
+    }    
+}
+    </script>
+    <script>
+        function isPalindrome(str) {
+
+let j = str.length - 1
+
+for (let i = 0; i < str.length / 2; i++) {
+
+    if (str[i] != str[j]) {
+
+        return false;
+
+    }
+
+    j--;
+
+}
+
+return true;
+}
+
+
+let str1 = "racecar";
+
+let str2 = "nitin";
+
+let str3 = "Rama";
+
+console.log(isPalindrome(str1));
+console.log(isPalindrome(str2));
+console.log(isPalindrome(str3));
+
+    </script>
+    <script>
+        function findLongestWord(str) {
+    let words = str.split(' ');
+    let longestWord = "";
+
+    for (let i = 0; i < words.length; i++) {
+
+        if (words[i].length > longestWord.length) {
+            longestWord = words[i];
+        }
+    }
+
+    return longestWord;
+}
+
+/
+let string = "i am the front end developer and going to class now";
+
+    </script>
+    <script>
+        // function
+        function isWithinRange(number, min, max) {
+    
+    if (number >= min && number <= max) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+var number = 10;
+var min = 5;
+var max = 15;
+
+if (isWithinRange(number, min, max)) {
+    console.log(number + " is within the range of " + min + " and " + max);
+} else {
+    console.log(number + " is not within the range of " + min + " and " + max);
+}
+    </script>
+    <script>
+        // largest number in the array.
+        function findLargestNumber(num) {
+    if (num.length === 0) {
+        throw new Error("Array is empty");
+    }
+
+    let largest = num[0];
+
+    for (let i = 1; i < num.length; i++) {
+        if (numbers[i] > largest) {
+            largest = num[i];
+        }
+    }
+
+    return largest;
+}
+
+const array = [10, 5, 45, 12, 3];
+const largestNumber = findLargestNumber(array);
+console.log("The largest number is:", largestNumber);
+    </script>
+
+    <script>
+        // factorial
+        function factorial(n) {
+    if (n === 0) {
+        return 1;
+    }
+    var res= 1;
+    for (var i = 1; i <= n; i++) {
+        res *= i;
+    }
+    return res;
+}
+var num = 8;
+console.log("The factorial of " + num + " is " + factorial(num)); 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
